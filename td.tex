@@ -56,6 +56,15 @@
 % Une macro
 \newcommand{\oula}{(\textbf{???})}
 
+% Macro pour page vide sans numérotation
+\usepackage{afterpage}
+\newcommand\myemptypage{
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage
+    }
+
 %======================================================================
 % D É B U T   D U   D O C U M E N T
 %======================================================================
@@ -97,5 +106,32 @@
   Etudiant : Théo Eisenbart\\
   Année universitaire 2022--2023
 }
+% Ajout d'une page vide
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+\newpage
+% Table des matières
+\tableofcontents
+
+\newpage
+
+\section{Efficacité de l'environnement de travail}}
+
+	\subsection{TD-1 : La souris}
+
+\begin{itemize}
+	\item Désactiver votre souris au noveau système avec la commande xinput
+\end{itemize}
+
+\vspace{0.3cm}
+\$ sudo xinput disable\{2,4,6\}
+\vspace{0.3cm}
+
+\begin{itemize}
+	\item Initialiser un fichier dans lequel nous allons lister tous les problèmes d'efficacité rencontrés pendant cette séance
+\end{itemize}
 
 \end{document}
