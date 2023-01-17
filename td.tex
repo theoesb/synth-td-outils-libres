@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+
+% La gestion des fontes, sachant que ce document est sensé
+% être compilé au moyen de XeLaTeX
+%\usepackage{fontspec,xltxtra}
+
+% Pour permettre la redéfinition des dimensions 
+\usepackage[a4paper]{geometry}
+
+% Pour le support du français
+\usepackage[francais]{babel}
+
+% Les polices à utiliser
+%\newcommand{\fontsphil}{
+ % \defaultfontfeatures{Mapping=tex-text}
+  %\defaultfontfeatures{Ligatures=TeX}
+  %\setmainfont{Linux Libertine O}
+  %\setsansfont{Liberation Sans}
+  %\setmonofont[Scale=.9]{Ubuntu Mono}
+  %\newfontfamily{\hwfont}{Comic Sans MS}
+  %\newfontfamily{\fatfont}{Arial Black}
+  %\newfontfamily{\authorfont}{Liberation Serif}
+  %\newfontfamily{\spacefont}{Liberation Mono}
+  %\fontspec[SmallCapsFont={Arial Black}]{Arial Black}
+%}
+%\fontsphil
+
+% Des polices pour quelques caractères spéciaux
+\usepackage{wasysym}
+\usepackage{pifont}
+
+% Gestion des images
+\usepackage{graphicx}
+
+% Gestion des couleurs
+\usepackage{color}
+\definecolor{fondsection}{rgb}{.9,.9,.9}
+
+% Gestion des espaces
+\usepackage{xspace}
+
+% Gestion des URL et liens hypertexte
+\usepackage{hyperref}
+
+% Configuration des dimensions
+\geometry{%
+  left=20mm,width=165mm,
+  top=15mm,height=267mm,
+  footskip=15mm}
+
+% Le titre
+\title{Mon super rapport de stage}
+\author{Alain Térieur}
+\date{Année universitaire 2016--2017}
+
+% Une macro
+\newcommand{\oula}{(\textbf{???})}
+
+%======================================================================
+% D É B U T   D U   D O C U M E N T
+%======================================================================
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \includegraphics[width=12cm]{Logo_IUT-UL_dept_info.png}
+\end{center}
+
+\vspace{1cm}
+
+\noindent
+{\large
+  IUT Nancy Charlemagne\\
+  Université de Lorraine\\
+  2 ter boulevard Charlemagne\\
+  BP 55227\\
+  54052 Nancy Cedex\\[5mm]
+  Département informatique
+}
+
+\vspace{5cm}
+
+\begin{center}
+  {\huge
+    \textbf{Synthèse des TD}
+  }
+\end{center}
+
+\vspace{5cm}
+
+{\Large
+  \noindent
+  Rapport de stage de DUT informatique\\
+  Entreprise : Geeks \& compagny
+}
+
+% \vspace{2cm}
+\vfill
+
+{\Large
+  \noindent
+  Kate Chup\\
+  Tuteur : Laure Tograffe\\
+  Année universitaire 2016--2017
+}
+
+\end{document}
