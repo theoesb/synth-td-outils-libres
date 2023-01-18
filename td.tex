@@ -65,6 +65,10 @@
     \newpage
     }
 
+% Packet pour les tableaux
+\usepackage{array}
+\usepackage{tabularx}
+
 %======================================================================
 % D É B U T   D U   D O C U M E N T
 %======================================================================
@@ -133,5 +137,26 @@
 \begin{itemize}
 	\item Initialiser un fichier dans lequel nous allons lister tous les problèmes d'efficacité rencontrés pendant cette séance
 \end{itemize}
+\vspace{0.3cm}
+
+\begin{tabular}{|c|p{5cm}|p{10cm}|}
+	\hline
+	\textbf{Priorité} & \textbf{Problème} & \textbf{Correctif}\\ 
+	\hline
+	1 & Logout difficile au clavier & Raccourci clavier \textbf{Ctrl+Alt+Suppr/Delete}\\
+	\hline
+	2 & Impossible d'éditer des documents PDF avec Google Drive & Utilisation de LaTeX\\
+	\hline
+	3 & Impossible d'avoir plusieurs terminaux en parallèle & Sous Terminator, \textbf{Ctrl+Shift+O} pour split le terminal verticalement,\newline \textbf{Ctrl+Shift+L} pour split le terminal horizontalement\\ 
+	\hline
+	4 & Naviguer dans discord sans la souris & \textbf{Tab} pour se déplacer de haut en bas, \textbf{Shift+Tab} pour aller de bas en haut \newline et \textbf{Ctrl+Tab} pour naviguer de gauche à droite\\
+	\hline 
+	5 & Se déplacer dans un éditeur de text sans la souris & Utilisation de Vim\\
+	\hline
+	6 & Ouvrir les settings de notre environnement graphique & shortcut configurable dans les settings ex : \textbf{Alt+S}\\
+	\hline
+	7 & Accèder au navigateur de fichier & shotcut configurable dans les settings ex : \textbf{Alt+F}\\
+	\hline
+\end{tabular}
 
 \end{document}
