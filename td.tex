@@ -69,6 +69,9 @@
 \usepackage{array}
 \usepackage{tabularx}
 
+% Packet pour les tabulations
+\usepackage{tabto}
+
 %======================================================================
 % D É B U T   D U   D O C U M E N T
 %======================================================================
@@ -205,11 +208,12 @@
 	\subsection{TD-3 : Le Shell}
 
 \begin{itemize}
-  \item Effectuer les tutoriels pour Vim et Emacs:
+  \item Effectuer les tutoriels pour Vim et Emacs :
+\end{itemize}
 \vspace{0.3cm}
 
 J'ai choisie d'apprendre VIM car c'est le plus utilisé et il est plus pratique que Emacs
-\end{itemize}
+
 \vspace{0.3cm}
 
 \begin{itemize}
@@ -223,14 +227,28 @@ J'ai choisie d'apprendre VIM car c'est le plus utilisé et il est plus pratique 
 
 \begin{itemize}
   \item Tester les 2 modes, en choisir un :
+\end{itemize}
 \vspace{0.3cm}
+
 J'ai choisie le mode Emacs car c'est le mode que j'ai le plus utilisé donc celui avec lequel je me sens le plus à l'aise
 c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois travailler sur une autre machine
-\end{itemize}
+
 \vspace{0.3cm}
 
 \begin{itemize}
   \item Paramétrer Emacs ou Vim comme étant éditeur par défaut en plus du mode de readline :
+
+\vspace{0.3cm}
+
+Ligne à ajouter dans le .bashrc .zshrc :
+\vspace{0.3cm} \newline
+\$ export EDITOR="vim"
+\vspace{0.3cm} \newline
+Ligne à effectuer dans le terminal pour chnager de readline :
+\vspace{0.3cm} \newline
+\$ set -o emacs \newline
+\newline
+J'ai donc choisie comme configuration "vim" en éditeur de texte par défaut et Emacs comme readline
 \end{itemize}
 
 \end{document}
