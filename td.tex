@@ -69,9 +69,6 @@
 \usepackage{array}
 \usepackage{tabularx}
 
-% Packet pour les tabulations
-\usepackage{tabto}
-
 %======================================================================
 % D É B U T   D U   D O C U M E N T
 %======================================================================
@@ -288,9 +285,9 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
   l'history, comment faire ?}
   \vspace{0.3cm}
 
-Pour régler ce problème, il suffit d'ajouter un sed pour filtrer les commandes non désiré : \newline
+Pour régler ce problème, il suffit d'ajouter un sed pour filtrer les commandes non désirées : \newline
 
-exemple : \$ history | sed '/ls/d'
+exemple : \$ history $|$ sed '/ls/d'
 
 \end{itemize}
 
