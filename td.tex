@@ -165,7 +165,7 @@
 \vspace{0.3cm}
 	\subsection{TD-2 : Le clavier}
   \begin{itemize}
-	\item Identifier un site permettant de s'améliorer à taper au clavier
+	  \item Identifier un site permettant de s'améliorer à taper au clavier
   \end{itemize}
 
 \vspace{0.3cm}
@@ -181,7 +181,7 @@
 
 \vspace{0.3cm}
 \begin{itemize}
-\item Screen de l'interface :
+  \item Screen de l'interface :
 \end{itemize}
 \vspace{0.3cm}
 
@@ -191,12 +191,9 @@
 
 \vspace{0.3cm}
 \begin{itemize}
-\item Quelque Résultat :
+  \item Quelque Résultat :
 \end{itemize}
 
-%\begin{figure}[ht!]
-%  \includegraphics[width=4cm]{screen-resultat-1.png}\hfill
-%\end{figure}
 \thispagestyle{empty}
 \begin{center}
   \includegraphics[width=4cm]{screen-resultat-1.png}\hfill
@@ -218,7 +215,7 @@ J'ai choisie d'apprendre VIM car c'est le plus utilisé et il est plus pratique 
 
 \begin{itemize}
   \item Paramétrer GNU Readline :
-\vspace{0.3cm}
+  \vspace{0.3cm}
 
   \$ set -o emacs \newline
   ou \newline
@@ -238,17 +235,17 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
 \begin{itemize}
   \item Paramétrer Emacs ou Vim comme étant éditeur par défaut en plus du mode de readline :
 
-\vspace{0.3cm}
+  \vspace{0.3cm}
 
-Ligne à ajouter dans le .bashrc .zshrc :
-\vspace{0.3cm} \newline
-\$ export EDITOR="vim"
-\vspace{0.3cm} \newline
-Ligne à effectuer dans le terminal pour chnager de readline :
-\vspace{0.3cm} \newline
-\$ set -o emacs \newline
-\newline
-J'ai donc choisie comme configuration "vim" en éditeur de texte par défaut et Emacs comme readline
+  Ligne à ajouter dans le .bashrc .zshrc :
+  \vspace{0.3cm} \newline
+  \$ export EDITOR="vim"
+  \vspace{0.3cm} \newline
+  Ligne à effectuer dans le terminal pour chnager de readline :
+  \vspace{0.3cm} \newline
+  \$ set -o emacs \newline
+  \newline
+  J'ai donc choisie comme configuration "vim" en éditeur de texte par défaut et Emacs comme readline
 \end{itemize}
 
   \subsection{TD-4 : Bash history}
@@ -256,13 +253,25 @@ J'ai donc choisie comme configuration "vim" en éditeur de texte par défaut et 
 \begin{itemize}
   \item Regardez votre "history" :
 
-\vspace{0.3cm}
+  \vspace{0.3cm}
 
-Voici ce qu'on obtient avec la commande : \$ history
+  Voici ce qu'on obtient avec la commande : \$ history
 \end{itemize}
 \vspace{0.3cm}
 
 \includegraphics[width=11cm]{screen-term-td4.png}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Y'a-t-il des informations sensibles ? Comment y rémédier ?
+
+  \vspace{0.3cm}
+
+  Oui il y a des informations sensibles car cette commande montre toutes les commandes qui ont été tapé (dans mon cas dans zsh) \newline
+  Mais il y a un moyen d'y remédier, autorisé la lecture au fichier ".zsh\_history" uniquement à root
+\end{itemize}
+
+\end{itemize}
 
 
 
