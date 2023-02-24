@@ -130,7 +130,7 @@
     \subsection{TD-1 : La souris}
 
   \begin{itemize}
-    \item Désactiver votre souris au noveau système avec la commande xinput
+    \item \textbf{Désactiver votre souris au noveau système avec la commande xinput}
   \end{itemize}
 
   \vspace{0.3cm}
@@ -138,7 +138,7 @@
   \vspace{0.3cm}
 
   \begin{itemize}
-    \item Initialiser un fichier dans lequel nous allons lister tous les problèmes d'efficacité rencontrés pendant cette séance
+    \item \textbf{Initialiser un fichier dans lequel nous allons lister tous les problèmes d'efficacité rencontrés pendant cette séance}
   \end{itemize}
   \vspace{0.3cm}
 
@@ -165,7 +165,7 @@
 \vspace{0.3cm}
 	\subsection{TD-2 : Le clavier}
   \begin{itemize}
-	  \item Identifier un site permettant de s'améliorer à taper au clavier
+	  \item \textbf{Identifier un site permettant de s'améliorer à taper au clavier}
   \end{itemize}
 
 \vspace{0.3cm}
@@ -181,7 +181,7 @@
 
 \vspace{0.3cm}
 \begin{itemize}
-  \item Screen de l'interface :
+  \item \textbf{Screen de l'interface :}
 \end{itemize}
 \vspace{0.3cm}
 
@@ -191,7 +191,7 @@
 
 \vspace{0.3cm}
 \begin{itemize}
-  \item Quelque Résultat :
+  \item \textbf{Quelque Résultat :}
 \end{itemize}
 
 \thispagestyle{empty}
@@ -205,7 +205,7 @@
 	\subsection{TD-3 : Le Shell}
 
 \begin{itemize}
-  \item Effectuer les tutoriels pour Vim et Emacs :
+  \item \textbf{Effectuer les tutoriels pour Vim et Emacs :}
 \end{itemize}
 \vspace{0.3cm}
 
@@ -214,7 +214,7 @@ J'ai choisie d'apprendre VIM car c'est le plus utilisé et il est plus pratique 
 \vspace{0.3cm}
 
 \begin{itemize}
-  \item Paramétrer GNU Readline :
+  \item \textbf{Paramétrer GNU Readline :}
   \vspace{0.3cm}
 
   \$ set -o emacs \newline
@@ -223,7 +223,7 @@ J'ai choisie d'apprendre VIM car c'est le plus utilisé et il est plus pratique 
 \end{itemize}
 
 \begin{itemize}
-  \item Tester les 2 modes, en choisir un :
+  \item \textbf{Tester les 2 modes, en choisir un :}
 \end{itemize}
 \vspace{0.3cm}
 
@@ -233,7 +233,7 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
 \vspace{0.3cm}
 
 \begin{itemize}
-  \item Paramétrer Emacs ou Vim comme étant éditeur par défaut en plus du mode de readline :
+  \item \textbf{Paramétrer Emacs ou Vim comme étant éditeur par défaut en plus du mode de readline :}
 
   \vspace{0.3cm}
 
@@ -251,7 +251,7 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
   \subsection{TD-4 : Bash history}
 
 \begin{itemize}
-  \item Regardez votre "history" :
+  \item \textbf{Regardez votre "history" :}
 
   \vspace{0.3cm}
 
@@ -263,7 +263,7 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
 \vspace{0.3cm}
 
 \begin{itemize}
-  \item Y'a-t-il des informations sensibles ? Comment y rémédier ?
+  \item \textbf{Y'a-t-il des informations sensibles ? Comment y rémédier ?}
 
   \vspace{0.3cm}
 
@@ -273,11 +273,25 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
 \vspace{0.3cm}
 
 \begin{itemize}
-  \item Un employé de longue date semble avoir un history très court, quelles sont les causes possibles ?
+  \item \textbf{Un employé de longue date semble avoir un history très court, quelles sont les causes possibles ?}
 
   \vspace{0.3cm}
 
   L'employé semble avoir changé de shell en passant de bash à zsh, vue qu'on remarque qu'il a installé zsh
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Nos history sont souvent pollués par beaucoup de ls , cd , pwd ...
+  Ces commandes sont tellement courtes que les taper entièrement est plus rapide.
+  On veut éviter qu'elles n'apparaissent dans les résultats de recherche de
+  l'history, comment faire ?}
+  \vspace{0.3cm}
+
+Pour régler ce problème, il suffit d'ajouter un sed pour filtrer les commandes non désiré : \newline
+
+exemple : \$ history | sed '/ls/d'
+
 \end{itemize}
 
 \end{document}
