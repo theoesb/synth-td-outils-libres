@@ -6,3 +6,4 @@
 \contentsline {subsection}{\numberline {1.4}TD-4 : Bash history}{5}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}TD-5 : Bash aliases}{6}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}TD-8 : Custom-shortcut}{7}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}TD-9 : Les terminaux}{7}{subsection.1.7}%
