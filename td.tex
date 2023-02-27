@@ -396,6 +396,48 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
 \end{itemize}
 \vspace{0.3cm}
 
+  \subsection{TD 2 : Autenthification automatique}
+  \vspace{0.3cm}
 
+\begin{itemize}
+  \item \textbf{Créer une paire de clés privée et publique à l'aide de ssh-keygen}
+  \vspace{0.3cm}
+
+  \includegraphics[width=7cm]{screen-ssh-td2.png}
+  \vspace{0.3cm}
+
+  Ma clé publique \(id\_rsa.pub\) et ma clé privée \(id\_rsa\) sont bien présente
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Utiliser la commande ssh-copy-id pour déposer la clé publique sur le compte alice@cli.
+  Vérifier qu'on peut maintenant se connecter sans mot de passe}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{screen-ssh-td2-2.png}
+  \vspace{0.3cm}
+
+  \includegraphics[width=9cm]{screen-ssh-td2-2.png}
+  \vspace{0.3cm}
+
+  La clé à bien été généré et déposé sur le compte alice@cli, on peut maintenant se connecter sans taper le mot de passe
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Déposer manuellement la clé publique sur le compte bob@cli}
+  \vspace{0.3cm}
+
+  \includegraphics[width=9cm]{screen-ssh-td2-4.png}
+  \vspace{0.3cm}
+
+  Dans bob@cli j'ai créé le dossier .ssh ainsi que le fichier authorized\_keys auquel j'ai ajouté ma clé publique,
+  et maintenant je peut me connecter sans avoir à taper le mot de passe avec cette commande : \newline
+
+  \includegraphics[width=8cm]{screen-ssh-td2-5.png}
+  \vspace{0.3cm}
+
+\end{itemize}
 
 \end{document}
