@@ -357,5 +357,45 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
   d'un sous terminal à un autre, il dispose aussi d'une bonne documentation du à sa forte communauté
 \end{itemize}
 
+  \section{Client SSH}
+
+    \subsection{TD-1 : Prise en main avec SSH}
+    \vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Se connecter à la machine srv avec les utilisateurs alice, bob et carole sans utiliser vagrant ssh}
+  \vspace{0.3cm}
+
+  La commande pour se connecter en SSH est : \newline
+
+  \$ ssh bob@10.0.0.1
+
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Vérifier qu'on est bien sur la machine Vagrant et pas en local}
+  \vspace{0.3cm}
+
+  \includegraphics[width=4cm]{screen-ssh-td1.png}
+  \vspace{0.3cm}
+
+  On remarque que c'est le nom de la machine vagrant, donc je suis bien connecté dessus
+
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Consulter l' history local, que remarque-t-on ?}
+  \vspace{0.3cm}
+
+  \includegraphics[width=4cm]{screen-ssh-td1-2.png}
+  \vspace{0.3cm}
+
+  On remarque que le mot de passe n'apparait pas dans le .bash\_history
+\end{itemize}
+\vspace{0.3cm}
+
+
 
 \end{document}
