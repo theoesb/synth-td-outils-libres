@@ -512,6 +512,31 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
   \subsection{TD-4 : Tunnel SSH}
   \vspace{0.3cm}
 
+\begin{itemize}
+  \item \textbf{Créer un tunnel SSH entre votre poste et srv à travers la machine cli}
+  \vspace{0.3cm}
 
+  La ligne de commande à éffectuer sur le poste est :
+  \vspace{0.3cm}
+
+  \includegraphics[width=9cm]{images/screen-ssh-td4-2.png}
+  \vspace{0.3cm}
+
+  Avec cette commande, la machine cli fait l'intermédiaire entre mon poste et srv, pour accèder au service de srv ma requête
+  doit d'abord passer par la machine cli sur le port 9000 puis la machine cli envoie une requête à srv sur le port 80
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Tester en ouvrant un navigateur sur votre poste local à l'adresse
+  http://localhost:8000/cgi-bin/test1.cgi}
+  \vspace{0.3cm}
+
+  \includegraphics[width=9cm]{images/screen-ssh-td4-1.png}
+  \vspace{0.3cm}
+
+  J'arrive bien à accèder au service de srv par l'intermédiaire de la machine cli
+\end{itemize}
+\vspace{0.3cm}
 
 \end{document}
