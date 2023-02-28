@@ -17,3 +17,4 @@
 \contentsline {subsection}{\numberline {2.7}TD-7 : Rebonds}{12}{subsection.2.7}%
 \contentsline {section}{\numberline {3}Git}{12}{section.3}%
 \contentsline {subsection}{\numberline {3.1}TD-1 : Kickstart}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}TD-2 : Les branches}{14}{subsection.3.2}%
