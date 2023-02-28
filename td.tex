@@ -641,5 +641,70 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
 \end{itemize}
 \vspace{0.3cm}
 
+  \section{Git}
+
+  \subsection{TD-1 : Kickstart}
+  \vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Créer un nouveau répertoire et y initialiser un repository}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td1-1.png}
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Y copier la configuration Vagrant des TD ssh (Vagrantfile + dossier srv)}
+  \vspace{0.3cm}
+
+  \includegraphics[width=7cm]{images/screen-git-td1-2.png}
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Regarder les modifications détectées par git}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td1-3.png}
+  \vspace{0.3cm}
+
+  Git à détécté l'ajout du Vagrantfile et du dossier srv, et il précise qu'ils sont pas add dans la staging area
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Démarrer puis arrêter la configuration Vagrant puis regarder à nouveau les modifications détectées par git,
+  que remarque-t-on ? Comment peut-on régler le problème ?}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td1-4.png}
+  \vspace{0.3cm}
+
+  Git à ajouté le dossier .vagrant/ dans la liste des fichier ajouté récemment, pour éviter cela, on peut écrire un fichier
+  .gitignore où on va référencer tous les fichiers qu'on ne veut pas add dans la stagging area :
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td1-5.png}
+  \vspace{0.3cm}
+
+  J'ai ajouté d'autre fichier parasite qui apparaissent à cause de vim
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Ajouter les fichiers Vagrant et commit les modifications, Vérifier que le commit est bien présent et correct}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td1-6.png}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td1-7.png}
+  \vspace{0.3cm}
+
+  Tout à bien été commit, j'ai pu en être sur grâce à la commande : \$ git log \newline
+  qui permet de voir tous les commit qui on été fait.
+\end{itemize}
+\vspace{0.3cm}
 
 \end{document}
