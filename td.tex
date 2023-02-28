@@ -539,4 +539,107 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
 \end{itemize}
 \vspace{0.3cm}
 
+  \subsection{TD-5 : SOCKS proxy}
+  \vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Se connecter en SSH sur srv}
+  \vspace{0.3cm}
+
+  \includegraphics[width=9cm]{images/screen-ssh-td5-1.png}
+  \vspace{0.3cm}
+
+  je suis connecté au srv sur le compte alice
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Se connecter à cli en permettant à cli d’accéder à srv via un tunnel accessible par le port 9000}
+  \vspace{0.3cm}
+
+  \includegraphics[width=9cm]{images/screen-ssh-td5-2.png}
+  \vspace{0.3cm}
+
+  maintenant le tunnel est bien créé
+  \vspace{0.3cm}
+
+  \includegraphics[width=9cm]{images/screen-ssh-td5-3.png}
+  \vspace{0.3cm}
+
+  La machine cli n'arrive pas à accèder au service de srv, hônnétement, j'ai pas trop compris cette partie du td
+\end{itemize}
+\vspace{0.3cm}
+
+  \subsection{TD-6 : X11 Forwarding}
+  \vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Installer une application graphique sur cli, ainsi que xauth}
+  \vspace{0.3cm}
+
+  \$ apt install x11-apps \newline
+  \$ apt install xauth
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Vérifier que vous pouvez lancer les applications graphiques installées et que les GUI s'affichent
+  sur le poste local}
+  \vspace{0.3cm}
+
+  \includegraphics[width=5cm]{images/screen-ssh-td6-1.png}
+  \vspace{0.3cm}
+
+  Avec cette commande, on va pouvvoir utiliser des applis en mode graphique qui sont installé sur la machine cli
+  \vspace{0.3cm}
+
+  \includegraphics[width=4cm]{images/screen-ssh-td6-2.png}
+  \vspace{0.3cm}
+
+  On arrive bien à lancer des applis en mode graphique depuis la machine cli
+\end{itemize}
+\vspace{0.3cm}
+
+  \subsection{TD-7 : Rebonds}
+  \vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Configurer .ssh/config avec ProxyJump de manière à pouvoir rebondir automatiquement sur cli lorsque
+  vous vous connectez à srv}
+  \vspace{0.3cm}
+
+  \includegraphics[width=6cm]{images/screen-ssh-td7-1.png}
+  \vspace{0.3cm}
+
+  Avec ceci, alice va pouvoir se connecter sur le srv en passant d'abord par la machine cli
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Vous pouvez utiliser la commande who pour vérifier de quelle adresse vous vous connectez.}
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-ssh-td7-2.png}
+  \vspace{0.3cm}
+
+  Tout fonctionne, alice passe bien par la machine cli pour se connecter à la machine srv
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Idem en utilisant ProxyCommand au lieu de ProxyJump}
+  \vspace{0.3cm}
+
+  \includegraphics[width=7cm]{images/screen-ssh-td7-3.png}
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-ssh-td7-4.png}
+  \vspace{0.3cm}
+
+  Tout fonctionne, il faut savoir que ProxyCommand est plus sécurisé, car il utilise 2 pairs de clé comparé à ProxyJump
+  qui en utilise qu'une seul
+\end{itemize}
+\vspace{0.3cm}
+
+
 \end{document}
