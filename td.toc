@@ -15,3 +15,5 @@
 \contentsline {subsection}{\numberline {2.5}TD-5 : SOCKS proxy}{10}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}TD-6 : X11 Forwarding}{11}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}TD-7 : Rebonds}{12}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Git}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}TD-1 : Kickstart}{12}{subsection.3.1}%
