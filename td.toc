@@ -19,3 +19,4 @@
 \contentsline {subsection}{\numberline {3.1}TD-1 : Kickstart}{12}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}TD-2 : Les branches}{14}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}TD-3 : Les conflits}{16}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}TD-4 : L'état de l'art}{17}{subsection.3.4}%
