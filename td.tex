@@ -707,4 +707,208 @@ c'est par ailleurs le mode par défaut ce qui me facilite grandement si je dois 
 \end{itemize}
 \vspace{0.3cm}
 
+  \subsection{TD-2 : Les branches}
+  \vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Créer une nouvelle branche}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td2-1.png}
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Dans le Vagrantfile, ajouter l'utilisateur patrick}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td2-2.png}
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Dans le Vagrantfile, installer php et l'activer sur apache}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td2-3.png}
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Effectuer 2 commits distincts à l'aide de la commande git add -p}
+  \vspace{0.3cm}
+
+  Le premier commit avec l'ajout de l'user patrick :
+  \vspace{0.3cm}
+
+  \includegraphics[width=13cm]{images/screen-git-td2-4.png}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td2-5.png}
+  \vspace{0.3cm}
+
+  Et le deuxième commit avec l'ajout de php :
+  \vspace{0.3cm}
+
+  \includegraphics[width=13cm]{images/screen-git-td2-6.png}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td2-7.png}
+  \vspace{0.3cm}
+
+  On peut s'assurer que les commits on bien été fait en utilisant la commande : \newline
+  \$ git log
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td2-8.png}
+\end{itemize}
+
+\begin{itemize}
+  \item \textbf{Revenir à la branche main , quel est l'état de votre working directory ?}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td2-9.png}
+  \vspace{0.3cm}
+
+  A part les fichier de merde dû à vim, rien n'a changer
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Intégrer les modification de code de l'exercice précédent dans main}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td2-10.png}
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Inspecter le commit de merge, y'a t'il des specificités ?}
+  \vspace{0.3cm}
+
+  \includegraphics[width=10cm]{images/screen-git-td2-11.png}
+  \vspace{0.3cm}
+
+  Oui, il est noté que ces commits proviennent de la branche "branche-1"
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Est-ce que la branche que vous avez créé existe toujours ? Qu'est-ce qu'on en fait ?}
+  \vspace{0.3cm}
+
+  Grâce à la commande : \newline
+  \$ git branch \newline
+  on peut voir toute les branches de notre repo local :
+  \vspace{0.3cm}
+
+  \includegraphics[width=2cm]{images/screen-git-td2-12.png}
+  \vspace{0.3cm}
+
+  Donc la branche "branche-1" éxiste encore, on peut la supprimer, mais le mieux serait de la garder pour avoir un
+  historique des commits
+\end{itemize}
+\vspace{0.3cm}
+
+  \subsection{TD-3 : Les conflits}
+  \vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Créer une nouvelle branche forward-new-port à partir de main}
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-git-td3-1.png}
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Sur forward-new-port : modifier le Vagrantfile pour forward le port 80 vers 8081 pour srv, puis commit}
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-git-td3-2.png}
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Sur main : modifier le Vagrantfile pour forward le port 80 vers 8080 pour srv, puis commit}
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-git-td3-3.png}
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Essayer de merger forward-new-port dans main}
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-git-td3-4.png}
+  \vspace{0.3cm}
+
+  Git me dit qu'il y a un conflit, donc il me pose une question sur quelle version choisir, pour répondre à cette question :
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-git-td3-5.png}
+  \vspace{0.3cm}
+
+  On vérifie les fichiers qui sont touché
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-git-td3-6.png} \hfill
+  \includegraphics[width=8cm]{images/screen-git-td3-7.png}
+  \vspace{0.3cm}
+
+  Puis on supprime à la main ce qu'on ne veut pas entre les 2 versions
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-git-td3-8.png}
+  \vspace{0.3cm}
+
+  On indique que le conflit est résolu
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-git-td3-9.png}
+  \vspace{0.3cm}
+
+  Pour finir on continue le merge
+\end{itemize}
+\vspace{0.3cm}
+
+  \subsection{TD-4 : L'état de l'art}
+  \vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Mettre en place une clé SSH sur GitHub pour éviter de taper son mot de passe à chaque push}
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-git-td4-1.png}
+\end{itemize}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item \textbf{Reset son repository local à l'état après l'exercice 1}
+  \vspace{0.3cm}
+
+  Après avoir reset le repo local, on le place dans le repo github avec les commandes : \newline
+
+  \includegraphics[width=9cm]{images/screen-git-td4-2.png} \newline
+  \includegraphics[width=8cm]{images/screen-git-td4-3.png}
+\end{itemize}
+
+\begin{itemize}
+  \item \textbf{Refaire les exercices 2 et 3 en poussant sur GitHub pour chaque commit ou création de branche,
+  utilisez les pull-request pour merge}
+  \vspace{0.3cm}
+
+  \includegraphics[width=8cm]{images/screen-git-td4-4.png}
+  \vspace{0.3cm}
+
+  Je ne vais pas plus détailler pour pas radoter, je vous mes le lien du github \href{https://github.com/theoesb/TD4-Git-outils-libre.git}{ici}
+\end{itemize}
+\vspace{0.3cm}
+
+  \section{Lien vers le GitHub LaTeX}
+  \vspace{0.3cm}
+
+  Vous retrouverez le lien vers le github du LaTeX \href{https://github.com/theoesb/synth-td-outils-libres.git}{ici}
+
 \end{document}
